@@ -1,0 +1,15 @@
+arr = [list(map(int, input().split())) for _ in range(9)]
+max = 0
+col = 0
+row = 0
+
+for i in range(9):
+    for j in range(9):
+        if max <= arr[i][j]:
+            max = arr[i][j]
+            col = i+1
+            row = j+1
+
+
+print(max)
+print(col,row)
